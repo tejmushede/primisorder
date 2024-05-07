@@ -25,10 +25,15 @@
 
 main{
   width: 100%;
+  min-height: 100vh;
   background-color: var(--bg-accent-primary);
   font-family: 'DM Serif Display', serif;
   color: var(--text-primary);
   padding: 0px 24px;
+}
+
+.order-error{
+  text-align: center;
 }
 
 
