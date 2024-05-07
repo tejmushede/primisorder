@@ -3,7 +3,7 @@ import './OrderDetails.css';
 
 const OrderDetails = ({data}) => {
 
-  const { orderSubtotal, deliveryCharge, total, dateOrdered } = data.order;
+  const { customer, orderSubtotal, deliveryCharge, total, dateOrdered } = data.order;
 
   const orderConfirmedEvent = data.templateText.events['order-confirmed'];
 
@@ -36,7 +36,7 @@ const OrderDetails = ({data}) => {
 
             <div className="left">
               <h2>{statusText}!</h2>
-              <p>Hi Tinashe</p>
+              <p>Hi {customer.firstName} {customer.secondName}</p>
             </div>
 
             <div className="right">
