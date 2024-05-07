@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+:root{
+  --bg-accent-primary: #1c1e22;
+  --bg-accent-secondary: #292d32;
+
+  --text-primary: #FFF;
+  --text-secondary: #D9D9D9;
+  --text-alternative: #000;
+  --highlight: #81ecec;
+
+  --box-shadow-primary: 5px 5px 10px #111214, -5px -5px 10px #272a30;
+  --box-shadow-primary-inset: inset 5px 5px 10px #111214, inset -5px -5px 10px #272a30;
+
+  --box-shadow-secondary: 6px 6px 10px #24262c, -6px -6px 10px #30343a;
+  --box-shadow-secondary-inset: inset -6px -6px 10px #30343a, inset 6px 6px 10px #24262c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main{
+  width: 100%;
+  background-color: var(--bg-accent-primary);
+  font-family: 'DM Serif Display', serif;
+  color: var(--text-primary);
+  padding: 0px 24px;
+}
+
+
+@media (min-width: 1024px){
+  main{
+    padding: 0px 100px;
+  }
+}
+
+
